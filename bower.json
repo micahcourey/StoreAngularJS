@@ -1,0 +1,9 @@
+{
+  "name": "StoreAngularJS",
+  "description": "A guitar store website built in AngularJS.",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "angular": "~1.4.7"
+  }
+}
