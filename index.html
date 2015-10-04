@@ -15,7 +15,7 @@
           <em class="pull-right">{{product.price | currency }}</em>
           <img ng-src="{{product.images[0].thumb}}"/>
         </h3>
-        <section ng-controller="PanelController as panel">
+        <section class="tab" ng-controller="PanelController as panel">
           <ul class="nav nav-pills">
             <li ng-class="{ active: panel.isSelected(1) }">
               <a href ng-click="panel.selectTab(1)">Description</a>
@@ -29,15 +29,15 @@
           </ul>
           <div class="panel" ng-show="panel.isSelected(1)">
             <h4>Description</h4>
-            <p>{{product.description}}</p>
+            <blockquote>{{product.description}}</blockquote>
           </div>
           <div class="panel" ng-show="panel.isSelected(2)">
             <h4>Specifications</h4>
-            <p>{{product.specs}}</p>
+            <blockquote>{{product.specs}}</blockquote>
           </div>
           <div class="panel" ng-show="panel.isSelected(3)">
             <h4>Reviews</h4>
-            <p>{{product.reviews}}</p>
+            <blockquote>{{product.reviews}}</blockquote>
           </div>
         </section>
       </li>
