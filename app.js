@@ -1,6 +1,10 @@
 (function(){
   var app = angular.module('store', [ ]);
 
+  app.controller('StoreController', function(){
+    this.products = guitars;
+  });
+
   app.controller("PanelController", function(){
     this.tab = 1;
 
@@ -10,10 +14,6 @@
     this.isSelected = function(checkTab){
       return this.tab === checkTab;
     };
-  });
-
-  app.controller('StoreController', function(){
-    this.products = guitars;
   });
 
   var guitars = [

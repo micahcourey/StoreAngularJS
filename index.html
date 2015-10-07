@@ -39,11 +39,17 @@
               <blockquote>{{product.specs}}</blockquote>
             </div>
             <div class="panel" ng-show="panel.isSelected(3)">
+
               <blockquote ng-repeat="review in product.reviews">
                 <b>Stars: {{review.stars}}</b>
                 {{review.body}}
-                <cite>by: {{review.author}}</cite>
-            <form name="reviewForm">
+                <cite class="clearfix">- {{review.author}}</cite>
+              </blockquote>
+              <form name="reviewForm">
+                <blockquote>
+                  <strong>{{review.stars}} Stars</strong>
+                  {{review.body}}
+                  <cite class="clearfix">-{{review.author}}</cite>
               </blockquote>
               <h4>Submit a Review</h4>
               <fieldset class="form-group">
