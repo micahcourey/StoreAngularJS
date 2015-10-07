@@ -23,10 +23,12 @@
       description: "The D-16 Adirondack acoustic guitar fills the room with a rich acoustic tone. Constructed with a solid Adirondack spruce top and finished in a polished gloss that perfectly complements its solid genuine mahogany back and sides, this pairing of balanced tonewoods adds just the right amount of warmth to the sound. The D-16 Adirondack is truly a guitar you'll want to pass along for generations.",
       canPurchase: true,
       soldOut: false,
-      images: [
+      image: 'img/Martin-D16.jpg',
+      reviews: [
         {
-          full: 'img/Martin-D16.jpg',
-          thumb: 'img/Martin-D16.jpg'
+          stars: 5,
+          body: "I love this guitar",
+          author: "Micah Courey"
         }
       ]
     },
@@ -36,10 +38,12 @@
       description: "The guitar is all Mahogany with 20 medium sized frets on a rosewood fingerboard. The is finished in a beautiful deep red that you don't see that often on guitars anymore.",
       canPurchase: true,
       soldOut: false,
-      images: [
+      image: 'img/Guild.png',
+      reviews: [
         {
-          full: 'img/D-25-full.gif',
-          thumb: 'img/Guild.png'
+          stars: 5,
+          body: "very nice",
+          author: "Micah Courey"
         }
       ]
     },
@@ -49,12 +53,14 @@
       description: "The last of the original Goldtops re-created like never before thanks to 2015's True Historic specs, with exacting appointments and materials, period-correct construction, and luscious PAF-style pickups.",
       canPurchase: true,
       soldOut: false,
-      images: [
+      image: 'img/les-paul.jpg',
+      reviews: [
         {
-          full: 'img/D-16.jpg',
-          thumb: 'img/les-paul.jpg'
+          stars: 5,
+          body: "This guitar is sick",
+          author: "Jimi Page"
         }
-      ]
+      ],
     },
     {
       name: "Fender Stratocaster",
@@ -62,12 +68,14 @@
       description: "The U.S.-made flagship of the Stratocaster lineup, as beautiful as it is functional. This is the go-to Strat model—the latest iteration of a time-honored classic crafted for those who appreciate and aspire to pure Fender style and quality. An instrument at the very heart of Fender, the American Standard Stratocaster is where the real thing starts, built with the very essence of great Stratocaster tone, phenomenal feel and peerless performance.",
       canPurchase: true,
       soldOut: false,
-      images: [
+      image: 'img/strat.png',
+      reviews: [
         {
-          full: 'img/D-16.jpg',
-          thumb: 'img/strat.png'
+          stars: 5,
+          body: "This guitar plays great especially upside down",
+          author: "Jimi Hendrix"
         }
-      ]
+      ],
     },
     {
       name: "30th Anniversary Custom 24",
@@ -75,12 +83,14 @@
       description: "The 30th Anniversary Custom 24 celebrates thirty years of building the guitars Paul saw the need for in the 1970’s and 80’s. It celebrates ingenuity, quality, and persistence.",
       canPurchase: true,
       soldOut: false,
-      images: [
+      image: 'img/PRS.png',
+      reviews: [
         {
-          full: 'img/D-16.jpg',
-          thumb: 'img/PRS.png'
+          stars: 4,
+          body: "I like it a lot!",
+          author: "Carlos Santana"
         }
-      ]
-    },
+      ],
+    }
   ];
 })();
