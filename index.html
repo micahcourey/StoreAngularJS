@@ -45,7 +45,7 @@
               <blockquote ng-repeat="review in product.reviews">
                 <b>Stars: {{review.stars}}</b>
                 {{review.body}}
-                <cite class="clearfix">- {{review.author}}</cite>
+                <cite class="clearfix">- {{review.author}} on {{review.createdOn | date}}</cite>
               </blockquote>
               <form name="reviewForm" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewForm.$valid && reviewCtrl.addReview(product)" novalidate>
                 <blockquote>
@@ -65,7 +65,6 @@
               <fieldset class="form-group">
                 <input ng-model="reviewCtrl.review.author" type="email" class="form-control" placeholder="jimmyDean@example.org" title="Email" required />
               </fieldset>
-              <div> reviewForm is {{reviewForm.$valid}} </div>
               <fieldset class="form-group">
                 <input type="submit" class="btn btn-primary pull-right" value="Submit" />
               </fieldset>

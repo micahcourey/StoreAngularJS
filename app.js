@@ -20,6 +20,7 @@
     this.review = {};
 
     this.addReview = function(product) {
+      this.review.createdOn = Date.now();
       product.reviews.push(this.review);
       this.review = {};
     };
@@ -37,7 +38,8 @@
         {
           stars: 5,
           body: "I love this guitar",
-          author: "Micah Courey"
+          author: "Micah Courey",
+          createdOn: 1444278570660
         }
       ]
     },
@@ -52,7 +54,8 @@
         {
           stars: 5,
           body: "very nice",
-          author: "Micah Courey"
+          author: "Micah Courey",
+          createdOn: 1444278570660
         }
       ]
     },
@@ -67,7 +70,8 @@
         {
           stars: 5,
           body: "This guitar is sick",
-          author: "Jimi Page"
+          author: "Jimi Page",
+          createdOn: 1444278570660
         }
       ],
     },
@@ -82,7 +86,8 @@
         {
           stars: 5,
           body: "This guitar plays great especially upside down",
-          author: "Jimi Hendrix"
+          author: "Jimi Hendrix",
+          createdOn: 1444278570660
         }
       ],
     },
@@ -97,7 +102,8 @@
         {
           stars: 4,
           body: "I like it a lot!",
-          author: "Carlos Santana"
+          author: "Carlos Santana",
+          createdOn: 1444278570660
         }
       ],
     }
